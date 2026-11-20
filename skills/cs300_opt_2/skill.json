@@ -1,0 +1,40 @@
+{
+  "name": "cs300_opt_2",
+  "version": "2.0.0",
+  "display_name": "沪深300优选策略二回测（4因子等权 EQ加权）",
+  "description": "声明式策略回测：沪深300成分股池内按4因子 z-score 等权 EQ加权综合评分选股，等权持有 Top10，月度调仓，信号收盘产生，次日首个交易日开盘执行。",
+  "runtime": "agent_python",
+  "entry": "SKILL.md",
+  "python_entry": "backtest.py",
+  "workflow": "workflow.json",
+  "allowed_tools": [
+    "app_dq_trade_calendar",
+    "app_dq_index_quote",
+    "app_dq_index_constituents_by_name",
+    "app_dq_stock_quote"
+  ],
+  "max_tool_calls": 12,
+  "max_rounds": 8,
+  "python_hooks": [
+    {
+      "name": "run_backtest",
+      "entry": "backtest.py",
+      "inputs": [],
+      "output": "strategy_result.v1"
+    }
+  ],
+  "output_contract": {
+    "format": "markdown",
+    "template": "report.md"
+  },
+  "permissions": {
+    "fs_read": [
+      "./skill_runs/cs300_opt_2/"
+    ],
+    "fs_write": [
+      "./skill_runs/cs300_opt_2/"
+    ],
+    "network": [],
+    "subprocess": []
+  }
+}
