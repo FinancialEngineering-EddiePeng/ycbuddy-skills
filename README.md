@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 # YouBuddy 量化策略 Skill 合集
 
@@ -35,7 +35,7 @@
 | 步骤 | 操作 |
 |---|---|
 | **1. 下载安装 YouBuddy** | 前往 [Releases](https://github.com/luoy38067/YouBuddy-quant-skills/releases/latest) 下载最新安装包（`YouBuddy_x.x.x_x64-setup.exe`，约 280MB），双击安装 |
-| **2. 获取本仓库** | `git clone https://github.com/luoy38067/YouBuddy-quant-skills.git`，或在页面右上角 **Code → Download ZIP** 下载解压。国内网络克隆 GitHub 慢时可改用 Gitee 镜像：`https://gitee.com/luoy38067/quant-skills.git` |
+| **2. 获取本仓库** | `git clone https://github.com/luoy38067/YouBuddy-quant-skills.git`，或在页面右上角 **Code → Download ZIP** 下载解压。国内网络克隆 GitHub 慢时可改用 Gitee 镜像：`https://gitee.com/luoy38067/YouBuddy-quant-skills.git` |
 | **3. 导入 Skill** | 打开 YouBuddy，进入软件内的 **Skill / 策略管理** 入口，选择「导入本地 Skill」，指向仓库 `skills/` 目录下对应的策略文件夹（例如 `skills/baima_offense_defense_opt`） |
 | **4. 运行回测** | 在 YouBuddy 中选中已安装的策略并运行，即可得到完整回测报告（净值曲线、逐笔成交、调仓记录、策略解读） |
 
