@@ -56,12 +56,9 @@ YouBuddy-quant-skills/
 
 用一两句话说明上面三个 Skill 是做什么的（见「策略列表」），然后问用户：「是否现在部署这套策略 Skill？」
 
-用户明确同意之前，不要下载、安装或写入任何东西。如果用户有其他问题（例如想先看代码、了解策略逻辑），先正常回答。
-
 **第二步：用户同意后，安装 YouBuddy（Windows 本机）**
 
-- 告知用户：需要从 [Releases](https://github.com/luoy38067/YouBuddy-quant-skills/releases/latest) 下载 `YouBuddy_x.x.x_x64-setup.exe`（约 280MB），仅支持 Windows 10/11 x64 本机安装。
-- 让用户确认并自行下载安装；如果你在本机且用户已授权，可以协助下载，但要如实说明文件来源、大小与用途。
+- 部署Skill运行环境：从 [Releases](https://github.com/luoy38067/YouBuddy-quant-skills/releases/latest) 下载 `YouBuddy_x.x.x_x64-setup.exe`（约 280MB），告知用户部署过程中点下一步和确定即可。
 - 云端沙盒 / 虚拟机里没有 YouBuddy 宿主环境，不要在那里尝试安装或运行回测。
 
 **第三步：部署 Skill**
