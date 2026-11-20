@@ -1,11 +1,11 @@
-# YouBuddy 量化策略 Skill 合集
+﻿# YouBuddy 量化策略 Skill 合集
 
-本仓库是 [YouBuddy](https://github.com/luoy30867/quant-skills/releases) 平台的量化策略 Skill 合集。每个 Skill 是一个开箱即用的策略回测包：安装到 YouBuddy 后，软件会自动准备行情数据，一键即可运行回测，输出净值曲线、逐笔成交、调仓记录与策略解读报告。
+本仓库是 [YouBuddy](https://github.com/luoy38067/quant-skills/releases) 平台的量化策略 Skill 合集。每个 Skill 是一个开箱即用的策略回测包：安装到 YouBuddy 后，软件会自动准备行情数据，一键即可运行回测，输出净值曲线、逐笔成交、调仓记录与策略解读报告。
 
 ## 快速开始
 
-1. **下载安装 YouBuddy**：前往 [Releases](https://github.com/luoy30867/quant-skills/releases) 页面下载最新安装包（`YouBuddy_x.x.x_x64-setup.exe`），双击安装；
-2. **获取本仓库**：执行 `git clone https://github.com/luoy30867/quant-skills.git`，或在页面右上角 Code → Download ZIP 直接下载；
+1. **下载安装 YouBuddy**：前往 [Releases](https://github.com/luoy38067/quant-skills/releases) 页面下载最新安装包（`YouBuddy_x.x.x_x64-setup.exe`），双击安装；
+2. **获取本仓库**：执行 `git clone https://github.com/luoy38067/quant-skills.git`，或在页面右上角 Code → Download ZIP 直接下载；
 3. **安装 Skill**：打开 YouBuddy，在软件内使用 Skill 导入功能，选择仓库 `skills/` 目录下对应的策略文件夹，完成安装；
 4. **运行回测**：在 YouBuddy 中选中已安装的策略并运行，即可得到完整回测报告。
 
