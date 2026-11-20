@@ -76,9 +76,9 @@ YouBuddy-quant-skills/
 |---|---|---|
 | 2026-11-20 | [v1.0.0](https://github.com/luoy38067/YouBuddy-quant-skills/releases/tag/v1.0.0) | 仓库开张：首批上架 3 个沪深300 系策略 Skill（白马攻防 / 优选策略一 / 优选策略二），YouBuddy 安装包同步发布至 Releases |
 
-## 维护说明
+## 反馈与更新
 
-本仓库由 YouBuddy 官方团队维护，欢迎通过 [Issues](https://github.com/luoy38067/YouBuddy-quant-skills/issues) 反馈使用问题与策略需求；更多类型的策略（ETF 轮动、全天候配置、红利杠铃等）将持续上架，欢迎 Star 关注。
+欢迎通过 [Issues](https://github.com/luoy38067/YouBuddy-quant-skills/issues) 反馈使用问题与策略需求；更多类型的策略（ETF 轮动、全天候配置、红利杠铃等）将持续上架，欢迎 Star 关注。
 
 ## License
 
