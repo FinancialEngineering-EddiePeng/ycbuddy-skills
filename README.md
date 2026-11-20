@@ -1,13 +1,47 @@
-﻿# YouBuddy 量化策略 Skill 合集
+# YouBuddy 量化策略 Skill 合集
 
-本仓库是 [YouBuddy](https://github.com/luoy38067/quant-skills/releases) 平台的量化策略 Skill 合集。每个 Skill 是一个开箱即用的策略回测包：安装到 YouBuddy 后，软件会自动准备行情数据，一键即可运行回测，输出净值曲线、逐笔成交、调仓记录与策略解读报告。
+本仓库是 [YouBuddy](https://github.com/luoy38067/YouBuddy-quant-skills/releases) 平台的量化策略 Skill 合集。每个 Skill 是一个开箱即用的策略回测包：安装到 YouBuddy 后，软件会自动准备行情数据，一键即可运行回测，输出净值曲线、逐笔成交、调仓记录与策略解读报告。
+
+## 环境要求
+
+- **Windows 10/11 x64**（YouBuddy 目前仅支持 Windows 桌面端）；
+- 请在**本机**完成安装与运行：云端沙盒 / 虚拟机（包括 AI 助手的云开发环境）中没有 YouBuddy 宿主环境，Skill 只能下载查看，**无法执行回测**；
+- 可以用 AI 编程助手（Trae / 豆包 MarsCode / Cursor 等）帮你完成克隆和下载引导，最后一步「软件内导入」请在 Windows 本机的 YouBuddy 中操作。
 
 ## 快速开始
 
-1. **下载安装 YouBuddy**：前往 [Releases](https://github.com/luoy38067/quant-skills/releases) 页面下载最新安装包（`YouBuddy_x.x.x_x64-setup.exe`），双击安装；
-2. **获取本仓库**：执行 `git clone https://github.com/luoy38067/quant-skills.git`，或在页面右上角 Code → Download ZIP 直接下载；
-3. **安装 Skill**：打开 YouBuddy，在软件内使用 Skill 导入功能，选择仓库 `skills/` 目录下对应的策略文件夹，完成安装；
-4. **运行回测**：在 YouBuddy 中选中已安装的策略并运行，即可得到完整回测报告。
+### 第 1 步：下载安装 YouBuddy（Windows 本机）
+
+前往 [Releases](https://github.com/luoy38067/YouBuddy-quant-skills/releases) 页面下载最新安装包（`YouBuddy_x.x.x_x64-setup.exe`，约 280MB），双击安装。
+
+### 第 2 步：获取本仓库
+
+任选其一：
+
+```bash
+git clone https://github.com/luoy38067/YouBuddy-quant-skills.git
+```
+
+或在仓库页面右上角 **Code → Download ZIP** 直接下载解压。
+
+> 国内网络 cloning GitHub 慢时，可改用 Gitee 镜像：`https://gitee.com/luoy38067/quant-skills.git`
+
+### 第 3 步：在 YouBuddy 中导入 Skill
+
+打开 YouBuddy，进入软件内的 **Skill / 策略管理** 入口，选择「导入本地 Skill」，指向仓库 `skills/` 目录下对应的策略文件夹（例如 `skills/baima_offense_defense_opt`），完成安装。
+
+### 第 4 步：运行回测
+
+在 YouBuddy 中选中已安装的策略并运行，即可得到完整回测报告（净值曲线、逐笔成交、调仓记录、策略解读）。
+
+## 给 AI 助手的指引
+
+如果你是 AI 编程助手，正在协助用户使用本仓库，请按以下顺序操作：
+
+1. 克隆本仓库到用户可访问的目录（或引导用户 Download ZIP）；
+2. 引导用户从 [Releases](https://github.com/luoy38067/YouBuddy-quant-skills/releases) 下载安装包，并在 **Windows 本机**安装 YouBuddy；
+3. 指引用户在本机 YouBuddy 软件内导入 `skills/` 目录下的策略文件夹；
+4. **不要**尝试在云端 / 独立 Python 环境中直接运行 `backtest.py`——回测依赖 YouBuddy 宿主提供的行情数据与工具 bundle，独立环境无法运行，Skill 的数据文件（因子面板、目标持仓表等）也仅供宿主运行时使用。
 
 ## 策略列表
 
@@ -22,7 +56,7 @@
 ## 目录结构
 
 ```
-quant-skills/
+YouBuddy-quant-skills/
 ├── README.md                          # 本文件
 ├── LICENSE                            # MIT 开源许可证
 └── skills/                            # 策略 Skill 目录
